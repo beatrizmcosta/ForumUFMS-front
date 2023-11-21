@@ -1,1 +1,7 @@
 <h1>Disciplinas Matriculadas</h1>
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let subject of subjects">
+    {{ subject.name }}
+  </li>
+</ul>
