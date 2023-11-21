@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {Component} from '@angular/core';
 import {HomeComponent} from './home/home.component';
 @Component({
@@ -15,6 +16,19 @@ import {HomeComponent} from './home/home.component';
     </main>
   `,
   styleUrls: ['./app.component.css'],
+=======
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { LoginComponent } from './pages/login/login.component';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+>>>>>>> ee815a932e98fff037df1e728358d0622d853060
 })
 export class AppComponent {
   title = 'homes';
